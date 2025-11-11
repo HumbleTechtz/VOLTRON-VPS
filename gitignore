@@ -1,0 +1,18 @@
+# Logs
+logs/
+*.log
+
+# Configs with passwords
+configs/*.key
+configs/*.conf
+
+# Backups
+backups/
+
+# Temporary files
+tmp/
+*.tmp
+
+# Database files
+*.db
+*.sqlite
