@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Voltron Boy Server</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltron Boy Server Admin</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>🚀 Voltron Boy Server</h1>
-            <p>Admin Panel</p>
+            <p>Admin Panel - Complete Control</p>
         </div>
-        <div class="content">
-            <p>Web Panel is ready!</p>
-            <p>WhatsApp: http://wa.me/255738132447</p>
+        
+        <div class="banner">
+            <pre>
+╔═══════════════════════════════════════════╗
+║          KARIBU KATIKA ULIMWENGU          ║
+║              WA TECHNOLOGY                ║
+║                                           ║
+║             BY VOLTRON BOY                ║
+║                                           ║
+║    WhatsApp: http://wa.me/255738132447    ║
+╚═══════════════════════════════════════════╝
+            </pre>
+        </div>
+
+        <div class="dashboard">
+            <div class="card">
+                <h3>🔧 Server Controls</h3>
+                <button onclick="controlService('start')">Start All</button>
+                <button onclick="controlService('stop')">Stop All</button>
+                <button onclick="controlService('restart')">Restart All</button>
+            </div>
+
+            <div class="card">
+                <h3>👥 User Management</h3>
+                <button onclick="createUser('dnstt')">Create DNSTT User</button>
+                <button onclick="createUser('v2ray')">Create V2Ray User</button>
+                <button onclick="createUser('ssh')">Create SSH User</button>
+            </div>
+
+            <div class="card">
+                <h3>📊 Statistics</h3>
+                <p>Total Users: <span id="userCount">0</span></p>
+                <p>Active Services: <span id="serviceCount">0</span></p>
+                <p>Server Status: <span class="status-online">Online</span></p>
+            </div>
         </div>
     </div>
+
     <script src="js/main.js"></script>
 </body>
-  </html>
+</html>
