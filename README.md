@@ -6,7 +6,7 @@ Complete VPS Server with SSH, DNSTT, V2Ray, and Web Panel Management
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/voltronserver.git
+git clone https://github.com/HumbleTechtz/voltronserver.git
 cd voltronserver
 chmod +x setup.sh
 ./setup.sh
